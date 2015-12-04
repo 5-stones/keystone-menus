@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/lighthousecatholicmedia/keystone-menus/issues"
   },
-  "homepage": "https://github.com/lighthousecatholicmedia/keystone-menus#readme"
+  "homepage": "https://github.com/lighthousecatholicmedia/keystone-menus#readme",
+  "dependencies": {
+    "jade": "^1.11.0"
+  },
+  "peerDependencies": {
+    "keystone": ">=0.3.15"
+  }
 }

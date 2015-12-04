@@ -1,0 +1,5 @@
+ul.nav.navbar-left
+  each item in menuItems
+    if item.active
+      li(class=(section == item.key ? 'active' : null))
+        a(href=item.href) item.name

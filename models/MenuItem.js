@@ -15,10 +15,7 @@ var MenuItem = new keystone.List('MenuItem', {
 MenuItem.add({
 	name: { type: String, required: true },
 	slug: { type: String, readonly: true },
-  key: { type: String, required: true, initial: true },
-
 	menus: { type: Types.Relationship, ref: 'Menu', many: true, required: true, initial: true },
-
   href: { type: Types.Url, required: true, initial: true },
   active: { type: Boolean, default: true }
 });
