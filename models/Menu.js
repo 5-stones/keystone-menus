@@ -1,4 +1,4 @@
-var keystone = global.keystone;
+var keystone = require('../lib/Keystone/KeystoneHelper').getKeystone();
 var Types = keystone.Field.Types;
 
 /**
