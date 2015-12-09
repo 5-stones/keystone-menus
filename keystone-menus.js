@@ -7,5 +7,11 @@ module.exports = {
     KeystoneHelper.setKeystone(keystone);
     keystone.import('node_modules/keystone-menus/models');
   },
-  builder: new Menu('')
+  builder: function(){
+    return new MenuBuilder();
+  },
+  routeParser: function(req, res, next){
+    KeystoneHelper.setCurrentRequest(req);
+    next();
+  }
 };

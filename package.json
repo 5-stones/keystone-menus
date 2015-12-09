@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/lighthousecatholicmedia/keystone-menus#readme",
   "dependencies": {
-    "jade": "^1.11.0"
+    "bluebird": "^3.0.6",
+    "jade": "^1.11.0",
+    "lodash": "^3.10.1"
   },
   "peerDependencies": {
     "keystone": ">=0.3.15"

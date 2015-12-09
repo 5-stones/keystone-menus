@@ -14,7 +14,7 @@ var Menu = new keystone.List('Menu', {
 Menu.add({
 	name: { type: String, required: true },
 	slug: { type: String, readonly: true },
-
+  items: { type: Types.Relationship, ref: 'MenuItem', many: true },
   active: { type: Boolean, default: true }
 });
 

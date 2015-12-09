@@ -1,6 +1,6 @@
-ul.nav.navbar-left
+ul&attributes(ulAttributes)
   each item in menuItems
     if item.active
-      li(class=(path == item.slug ? 'active' : null))
-        a(href=item.href) 
+      li(class=(path == "/"+item.slug ? 'active' : null))&attributes(liAttributes)
+        a(href=item.href)&attributes(aAttributes)
           = item.name
