@@ -3,9 +3,7 @@ var Types = keystone.Field.Types;
 
 /**
  * Product Model
- * =============
  */
-
 var MenuItem = new keystone.List('MenuItem', {
   autokey: { path: 'slug', from: 'name', unique: true },
   defaultColumns: 'name, key, menus, href, active'
@@ -16,13 +14,6 @@ MenuItem.add({
 	slug: { type: String, readonly: true },
   href: { type: Types.Url, required: true, initial: true },
   active: { type: Boolean, default: true }
-});
-
-MenuItem.schema.virtual('classes').get(function() {
-  classes = [];
-  for(i in this.categories)
-    classes.push(this.categories[i].slug);
-  return classes;
 });
 
 MenuItem.register();

@@ -3,9 +3,7 @@ var Types = keystone.Field.Types;
 
 /**
  * Menu Mongoose Model
- * =============
  */
-
 var Menu = new keystone.List('Menu', {
   autokey: { path: 'slug', from: 'name', unique: true },
   defaultColumns: 'name, active'
@@ -16,13 +14,6 @@ Menu.add({
 	slug: { type: String, readonly: true },
   items: { type: Types.Relationship, ref: 'MenuItem', many: true },
   active: { type: Boolean, default: true }
-});
-
-Menu.schema.virtual('classes').get(function() {
-  classes = [];
-  for(i in this.categories)
-    classes.push(this.categories[i].slug);
-  return classes;
 });
 
 Menu.register();
