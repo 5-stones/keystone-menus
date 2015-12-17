@@ -1,6 +1,6 @@
-var MenuBuilder = require('./lib/Menu/MenuBuilder');
-var KeystoneHelper = require('./lib/Keystone/KeystoneHelper');
-var Menu = require('./lib/Menu/Menu');
+var MenuBuilder = require('./dist/Menu/MenuBuilder');
+var KeystoneHelper = require('./dist/Keystone/KeystoneHelper');
+var Menu = require('./dist/Menu/Menu');
 
 module.exports = {
   import: function(keystone){
