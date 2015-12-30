@@ -34,7 +34,7 @@ keystone.set('nav', {
 keystone.start();
 ```
 
-**2.** Start up your application and add the menus and menu items that you will be using in the admin UI. Reference the [Objects](#Objects) section for details on the Menu and MenuItem objects and their fields.
+**2.** Start up your application and add the menus and menu items that you will be using in the admin UI. Reference the [Objects](#objects) section for details on the Menu and MenuItem objects and their fields.
 
 **3.** In your routes (most likely in middleware.js, unless the menus only need to load on certain pages) initialize the MenuBuilder object, then use it to build a menu. Once the menu is built, render it.
 
