@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "A Node.js module for making menus and menu items in Keystone Object-Oriented",
   "main": "keystone-menus.js",
+  "keywords": [
+    "keystone",
+    "menu",
+    "menus",
+    "nav",
+    "navigation",
+    "navbar"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
