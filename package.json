@@ -1,6 +1,6 @@
 {
   "name": "keystone-menus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js module for making menus and menu items in Keystone Object-Oriented",
   "main": "keystone-menus.js",
   "keywords": [
