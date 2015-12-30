@@ -2,15 +2,13 @@
 
 
 ## Installation
-===================================================
 
 To install, simply add keystone-menus to the list of dependencies in your Keystone application's package.json and run npm install.
 
 
 ## Usage
-===================================================
 
-1. In your application's keystone.js file, include the module, import its models, and add the models to your Keystone admin UI:
+**1.** In your application's keystone.js file, include the module, import its models, and add the models to your Keystone admin UI:
 
 ```js
 // Simulate config options from your production environment by
@@ -36,9 +34,9 @@ keystone.set('nav', {
 keystone.start();
 ```
 
-2. Start up your application and add the menus and menu items that you will be using in the admin UI. Reference the [Objects](#Objects) section for details on the Menu and MenuItem objects and their fields.
+**2.** Start up your application and add the menus and menu items that you will be using in the admin UI. Reference the [Objects](#Objects) section for details on the Menu and MenuItem objects and their fields.
 
-3. In your routes (most likely in middleware.js, unless the menus only need to load on certain pages) initialize the MenuBuilder object, then use it to build a menu. Once the menu is built, render it.
+**3.** In your routes (most likely in middleware.js, unless the menus only need to load on certain pages) initialize the MenuBuilder object, then use it to build a menu. Once the menu is built, render it.
 
 ```js
 var KeystoneMenus = require('keystone-menus');
@@ -67,7 +65,7 @@ The render function has 4 parameters:
 * **liAttributes** HTML attributes to apply to the menu's lis, example: {'class': 'nav-item'}
 * **aAttributes** HTML attributes to apply to the menu's as, example: {'class': 'nav-link'}
 
-4. Reference your rendered menu templates in your views.
+**4.** Reference your rendered menu templates in your views.
 
 ```jade
 .navbar-links
@@ -75,7 +73,6 @@ The render function has 4 parameters:
 ```
 
 ## Objects
-===================================================
 
 #### Menu
 * **Name:** The name you will use in your application
