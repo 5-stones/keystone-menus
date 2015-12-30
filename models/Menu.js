@@ -6,14 +6,13 @@ var Types = keystone.Field.Types;
  */
 var Menu = new keystone.List('Menu', {
   autokey: { path: 'slug', from: 'name', unique: true },
-  defaultColumns: 'name, active'
+  defaultColumns: 'name'
 });
 
 Menu.add({
 	name: { type: String, required: true },
 	slug: { type: String, readonly: true },
-  items: { type: Types.Relationship, ref: 'MenuItem', many: true },
-  active: { type: Boolean, default: true }
+  items: { type: Types.Relationship, ref: 'MenuItem', many: true }
 });
 
 Menu.register();
