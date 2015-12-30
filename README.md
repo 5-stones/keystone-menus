@@ -62,10 +62,10 @@ exports.initLocals = function(req, res, next) {
 ```
 
 The render function has 4 parameters:
-* **path** The current request path. Used for setting the active <li>
-* **ulAttributes** HTML attributes to apply to the menu's <ul>, example: {'class': 'nav navbar-left'}
-* **liAttributes** HTML attributes to apply to the menu's <li>s, example: {'class': 'nav-item'}
-* **aAttributes** HTML attributes to apply to the menu's <a>s, example: {'class': 'nav-link'}
+* **path** The current request path. Used for setting the active li
+* **ulAttributes** HTML attributes to apply to the menu's ul, example: {'class': 'nav navbar-left'}
+* **liAttributes** HTML attributes to apply to the menu's lis, example: {'class': 'nav-item'}
+* **aAttributes** HTML attributes to apply to the menu's as, example: {'class': 'nav-link'}
 
 4. Reference your rendered menu templates in your views.
 
